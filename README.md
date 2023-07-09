@@ -20,4 +20,4 @@ plot!(getHistory(a, 2), label="P2")
 ylabel!("Position")
 xlabel!("Turn")
 ```
-![term]("img/term.png")
+![term](img/term.png)
