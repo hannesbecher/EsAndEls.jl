@@ -29,7 +29,7 @@ shortcuts = [
 
 boardSize = 100
 
-board1 = MoveArr(100, shortcuts)
+board1 = MoveArray(100, shortcuts)
 
 
 # add function to look up ne position on board
