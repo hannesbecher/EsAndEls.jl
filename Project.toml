@@ -1,0 +1,13 @@
+name = "EsAndEls"
+uuid = "224a419a-e16d-49b0-91e3-f240b2f9239c"
+authors = ["Hannes Becher"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
