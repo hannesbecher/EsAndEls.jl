@@ -27,14 +27,9 @@ shortcuts = [
      Ladder(84, 98)
 ]
 
-moveArr = [2:101 3:102 4:103 5:104 6:105 7:106]
-moveArr[moveArr .> 100] .= 100
+boardSize = 100
 
-# fill in shortcuts in 1st column
-for i in shortcuts
-    moveArr[start(i), 1] = ende(i)
-end
+board1 = MoveArr(100, shortcuts)
 
-for i in 2:6
-    moveArr[1:99, i] = moveArr[2:100, i-1]
-end
+
+# add function to look up ne position on board

@@ -43,3 +43,24 @@ ende(x::ShortCut)
 Extract end field from a `ShortCut` object.
 """
 ende(x::ShortCut) = x.ende
+
+
+struct MoveArr
+    arr::Vector{Int}
+    size::Int
+end
+
+function MoveArr(sz::Int, sc::Vector{ShortCut})
+    a = collect(1:sz)
+    for i in sc
+        a[start(i)] = ende(i)
+    end
+    return MoveArr(a, sz)
+end
+
+
+MoveArr(sz::Int) = MoveArr(collect(1:sz), sz)
+
+
+# make a die type (possibly that saves its past states)
+# and a roll! function

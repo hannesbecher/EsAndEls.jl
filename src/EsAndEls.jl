@@ -5,7 +5,9 @@ module EsAndEls
 export greet,
 # objects
        a,
-       moveArr
+       board1,
+#types
+       MoveArr
 
 
 greet() = println("Hello there!")
